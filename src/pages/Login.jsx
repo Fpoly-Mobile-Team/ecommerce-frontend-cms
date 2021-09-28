@@ -37,7 +37,6 @@ const Login = () => {
               <button className="w-full m-2 p-3 bg-main text-white rounded">Đăng Nhập</button>
 
               <Link className="text-sm text-gray-400 p-3" to="/forgot-password" >Lost Your Password?</Link>
-
           </div>
         </div>
       </div>
