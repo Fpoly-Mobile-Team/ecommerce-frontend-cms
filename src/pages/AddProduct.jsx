@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import NavLeft from "../components/NavLeft";
 
-const Home = () => {
+const AddProduct = () => {
   return (
     <div>
       <div className="flex w-full">
@@ -12,7 +12,7 @@ const Home = () => {
         </div>
         <div className="main w-10/12 bg-mainWhite">
           <Navbar />
-          <div className="content">Home</div>
+          <div className="content">Add Product</div>
         </div>
       </div>
       <Footer />
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AddProduct;

@@ -1,8 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
-// import NavBarSeller from "../components/NavBarSeller";
 
-const SignUpSeller = () => {
+const Login = () => {
   return (
     <div>
       {/* <NavBarSeller /> */}
@@ -52,4 +51,4 @@ const SignUpSeller = () => {
   );
 };
 
-export default SignUpSeller;
+export default Login;
