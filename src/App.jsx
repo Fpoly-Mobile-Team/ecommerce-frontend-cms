@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Products from "./pages/Products";
 import AddProduct from "./pages/AddProduct";
+import ForgotPassword from "./pages/ForgotPassword";
 
 const App = () => {
   return (
@@ -10,6 +11,9 @@ const App = () => {
       <Switch>
         <Route path="/login">
           <Login />
+        </Route>
+        <Route path="/forgot-password">
+          <ForgotPassword />
         </Route>
         <Route path="/products">
           <Products />
