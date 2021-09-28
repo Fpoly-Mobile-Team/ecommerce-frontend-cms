@@ -5,7 +5,7 @@ const NavLeft = () => {
   return (
     <div>
       {/* Logo */}
-      <div className="logo w-full px-10 py-7">
+      <div className="logo w-full px-7 py-3 bg-yellow-300">
         <Link to="/">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/2560px-Shopee.svg.png"
