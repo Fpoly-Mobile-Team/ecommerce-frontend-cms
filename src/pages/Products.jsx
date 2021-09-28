@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import NavLeft from "../components/NavLeft";
 import { products } from "../data/products";
 import { Link } from "react-router-dom";
-import { AiFillEdit } from "react-icons/ai";
+import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 import { useState } from "react";
 
 const checkProducts = (list) => {
@@ -77,7 +77,7 @@ const Products = () => {
                       </td>
                       {/* CAT */}
                       <td>
-                        <div className="w-64 flex flex-col h-28">
+                        <div className="w-64 flex flex-col">
                           <span className="bg-green-900 rounded m-2 p-1 text-center text-white">
                             {el.category[0]}
                           </span>
@@ -92,7 +92,7 @@ const Products = () => {
                       </td>
                       {/* TAG */}
                       <td>
-                        <div className="w-64 flex-wrap flex h-28 items-start justify-center">
+                        <div className="w-50 flex-wrap flex items-start justify-center">
                           {el.tag.map((item) => {
                             return (
                               <span className="bg-green-500 rounded m-2 p-1 text-center text-white">
@@ -103,10 +103,15 @@ const Products = () => {
                         </div>
                       </td>
                       {/* EDIT */}
-                      <td className="flex justify-center items-center h-28">
-                        <button className="bg-red-400 hover:bg-red-500 rounded p-3">
+                      <td className="flex justify-around items-start mt-2">
+                        <button className="bg-blue-400 hover:bg-blue-500 rounded p-3">
                           <Link to="/edit-product">
                             <AiFillEdit className="text-white mx-auto" />
+                          </Link>
+                        </button>
+                        <button className="bg-red-400 hover:bg-red-500 rounded p-3">
+                          <Link to="/delete-product">
+                            <AiFillDelete className="text-white mx-auto" />
                           </Link>
                         </button>
                       </td>

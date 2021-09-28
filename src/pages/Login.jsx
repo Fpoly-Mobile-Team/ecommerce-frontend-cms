@@ -7,35 +7,41 @@ const Login = () => {
     <div>
       {/* <NavBarSeller /> */}
       <div className="flex h-screen bg-white mt-36 mx-20">
-        
         {/* RIGHT */}
         <div className="form-sign-up-center w-100 mx-auto my-20">
           <div className="form">
-              <h3 className="text-2xl font-bold text-gray-900 p-10 text-center">
-                Đăng nhập Kênh Người Bán
-              </h3>
+            <h3 className="text-2xl font-bold text-gray-900 p-10 text-center">
+              Đăng nhập Kênh Người Bán
+            </h3>
+            <input
+              type="text"
+              className="w-full p-3 shadow m-2"
+              name=""
+              id=""
+              placeholder="Email..."
+            />
+            <input
+              type="text"
+              className="w-full p-3 shadow m-2"
+              name=""
+              id=""
+              placeholder="password..."
+            />
+            <div className="flex">
               <input
-                type="text"
-                className="w-full p-3 shadow m-2"
+                type="checkbox"
                 name=""
                 id=""
-                placeholder="Email..."
+                className="w-5 h-5 p-3 shadow m-2"
               />
-              <input
-                type="text"
-                className="w-full p-3 shadow m-2"
-                name=""
-                id=""
-                placeholder="password..."
-              />
-              <div className="flex">
-              <input type="checkbox" name="" id="" className="w-5 h-5 p-3 shadow m-2"
-                />
-              <p className="text-sm text-gray-400 py-2" > Remember Me</p>
-              </div>
-              <button className="w-full m-2 p-3 bg-main text-white rounded">Đăng Nhập</button>
-
-              <Link className="text-sm text-gray-400 p-3" to="/forgot-password" >Lost Your Password?</Link>
+              <p className="text-sm text-gray-400 py-2"> Remember Me</p>
+            </div>
+            <button className="w-full m-2 p-3 bg-gray-700 hover:bg-gray-900 text-white rounded">
+              <Link to="/products">Đăng Nhập</Link>
+            </button>
+            <Link className="text-sm text-gray-400 p-3" to="/forgot-password">
+              Lost Your Password?
+            </Link>
           </div>
         </div>
       </div>
