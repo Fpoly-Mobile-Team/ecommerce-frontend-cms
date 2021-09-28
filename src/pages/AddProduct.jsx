@@ -12,7 +12,9 @@ const AddProduct = () => {
         </div>
         <div className="main w-10/12 bg-mainWhite">
           <Navbar />
-          <div className="content">Add Product</div>
+          <div className="content px-10 py-5 rounded shadow mt-4 ml-4 mr-4">
+            ADD PRODUCT
+          </div>
         </div>
       </div>
       <Footer />
